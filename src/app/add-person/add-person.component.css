@@ -1,0 +1,10 @@
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.add-person-box {
+  padding: 1.8rem;
+}

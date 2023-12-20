@@ -1,0 +1,28 @@
+header {
+  background-color: darkblue;
+  padding: 1.2rem 0.8rem 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: white;
+}
+
+.title {
+  color: white;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+footer {
+  background-color: darkgreen;
+  padding: 1.2rem 0.6rem 1.2rem;
+  color: white;
+}
+
+.router-outlet {
+  min-height: 50vh;
+}

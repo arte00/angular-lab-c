@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Person Details</h2>
+  <div class="content">
+    <a [routerLink]="['/']">&laquo; Back</a>
+    <div class="details-box" *ngIf="person; else personDoesntExist">
+      <h4 style="text-decoration: underline">{{ person.firstName + ' ' + person.lastName }}</h4>
+      <ul>
+        <li>
+          <span>ID</span>
+          <span>{{ id }}</span>
+        </li>
+        <li *ngIf="person.age">
+          <span>Age</span>
+          <span>{{ person.age }}</span>
+        </li>
+        <li *ngIf="person.address.city">
+          <span>City</span>
+          <span>{{ person.address.city }}</span>
+        </li>
+        <li *ngIf="person.address.street">
+          <span>Street</span>
+          <span>{{ person.address.street }}</span>
+        </li>
+        <li *ngIf="person.address.postCode">
+          <span>Postcode</span>
+          <span>{{ person.address.postCode }}</span>
+        </li>
+      </ul>
+    </div>
+    <ng-template #personDoesntExist>
+      <h4>
+        This person doesn't exist
+      </h4>
+    </ng-template>
+  </div>
+</div>

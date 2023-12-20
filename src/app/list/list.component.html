@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Stored People</h2>
+  <div class="content">
+    <ng-container *ngFor="let person of people; let i = index">
+      <div class="person">
+        <h4>
+          <a [routerLink]="['/details', i]">
+            {{ person.firstName + ' ' + person.lastName + ' [' + i + ']' }}
+          </a>
+        </h4>
+        <div class="person-remover" (click)="delete(i)">Remove</div>
+      </div>
+    </ng-container>
+  </div>
+</div>

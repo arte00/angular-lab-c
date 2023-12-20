@@ -1,0 +1,20 @@
+.person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.person-remover {
+  padding: 0.5rem;
+  background-color: indianred;
+  border-radius: 8px;
+  color: white;
+  border: 1px solid black;
+}
+
+.person-remover:hover {
+  cursor: pointer;
+  background-color: rgba(205, 92, 92, 0.82);
+  border: 2px solid black;
+}
